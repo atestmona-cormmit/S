@@ -22,12 +22,13 @@ jobs:
         uses: actions/checkout@v4
 
       # ======================================================
-      # Setup Node.js
+      # Setup Node.js (تم التعديل هنا)
       # ======================================================
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "20.20.2"   # تم تثبيت الإصدار بدقة
+          check-latest: false       # منع محاولة جلب أحدث إصدار فرعي
           cache: "npm"
 
       # ======================================================
