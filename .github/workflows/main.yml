@@ -22,14 +22,14 @@ jobs:
         uses: actions/checkout@v4
 
       # ======================================================
-      # Setup Node.js (تم التعديل هنا)
+      # Setup Node.js
       # ======================================================
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20.20.2"   # تم تثبيت الإصدار بدقة
-          check-latest: false       # منع محاولة جلب أحدث إصدار فرعي
-          cache: "npm"
+          node-version: "20.20.2"
+          check-latest: false
+          # تم إزالة cache: "npm" لحل مشكلة عدم وجود package-lock.json
 
       # ======================================================
       # Install FFmpeg
