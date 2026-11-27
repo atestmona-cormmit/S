@@ -74,7 +74,7 @@ jobs:
           STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
             -H "Authorization: token $WOLF_TOKENS_PAT" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/Ana72932/Too/contents/token.json")
+            "https://api.github.com/repos/Ean72932/Too/contents/2t.json")
 
           if [ "$STATUS" != "200" ]; then
             echo "❌ Failed to access too/tokens.json: HTTP $STATUS"
